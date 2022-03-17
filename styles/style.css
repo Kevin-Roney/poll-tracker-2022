@@ -30,27 +30,21 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
-
+body {
+    background-image: url('/assets/background.jpg');
+}
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: calc(var(--footer-height));
+    max-height: 60%;
 }
 
 section {
     background-color: var(--color5);
     max-width: 80%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
 }
 
 header {
@@ -78,7 +72,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +82,35 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+#polls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: auto;
+    background-color: rgba(0, 255, 255, 0.5);
+}
+#current-poll {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: 4px 5px 15px -2px rgba(0,0,0,0.58);
+    max-width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(109, 0, 211, 0.589);
+}
+#Qs {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+#completed-polls {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+.current {
+    box-shadow: 4px 5px 15px -2px rgba(0,0,0,0.58);
+    background-color: rgba(165, 42, 42, 0.5);
+}
+.past-poll {
+    background-color: rgba(0, 255, 255, 0.5);
 }

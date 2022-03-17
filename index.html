@@ -9,60 +9,62 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Some Polling Fun!</title>
 </head>
 
 <body>
     <header>
+        <h2 id="headerEL">Some polling fun!</h2>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+        <section id="Qs">
+            <h2>Enter a question</h2>
+            <input id="question-input"></input>
         </section>
-    </main>
+        <section id="polls">
+            <div id="option1">
+                <h2>Enter an option!</h2>
+                <input id="input-option1"></input>
+            </div>
+            <div id="add-options">
+                <button id="add-options-button">*Click here to add options*</button>
+            </div>
+            <div id="option2">
+                <h2>Enter an option!</h2>
+                <input id="input-option2"></input>
+            </div>
+        </section>
+        <section id="current-poll">
+            <div id="ques-holder">
+                <h2 id="question"></h2>
+            </div>
+            <div id="current-1">
+                <span id="holder-1"></span>
+                <button id="add-1">+</button>
+                <button id="subtract-1">-</button>
+            </div>
+            <div id="current-count-1">
+            </div>
+            <div id="current-2">
+                <span id="holder-2"></span>
+                <button id="add-2">+</button>
+                <button id="subtract-2">-</button>
+            </div>
+            <div id="current-count-2">
+            </div>
+            <div id="current-polling"></div>
+            <div id="complete-button">
+                <button id="finish-button">Generate Results!</button>
+        </section>
+        <section id="completed-polls">
+            <h2>Past Polling</h2>
+            <div id="ready-for-past-polls">
+            </div>
+        </section> 
+        </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
