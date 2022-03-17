@@ -9,16 +9,21 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Some Polling Fun!</title>
 </head>
 
 <body>
     <header>
+        <h2 id="headerEL">Some polling fun!</h2>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
     <main>
+        <section id="Qs">
+            <h2>Enter a question</h2>
+            <input id="question-input"></input>
+        </section>
         <section id="polls">
             <div id="option1">
                 <h2>Enter an option!</h2>
@@ -33,6 +38,9 @@
             </div>
         </section>
         <section id="current-poll">
+            <div id="ques-holder">
+                <h2 id="question"></h2>
+            </div>
             <div id="current-1">
                 <span id="holder-1"></span>
                 <button id="add-1">+</button>
@@ -52,6 +60,7 @@
                 <button id="finish-button">Generate Results!</button>
         </section>
         <section id="completed-polls">
+            <h2>Past Polling</h2>
             <div id="ready-for-past-polls">
             </div>
         </section> 
